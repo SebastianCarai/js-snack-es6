@@ -42,11 +42,11 @@ for (let i=0; i<teams.length; i++){
     const {name, sufferedFouls} = singleTeam;
     const copySingleTeam = {
         name,
-        sufferedFouls,
+        sufferedFouls
     }
     newArray.push(copySingleTeam)
 
     console.log(name + ': ' + copySingleTeam.sufferedFouls + ' falli subiti');
 }
 console.log(newArray);
-console.log(teams)
+console.log(teams);
