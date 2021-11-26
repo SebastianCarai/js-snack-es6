@@ -25,13 +25,14 @@ for (let i=0; i<bicycles.length; i++){
         minWeightBicycle = bicycles[i];
     };
 
-    // Printing the result
-    const {name, weightInKg} = minWeightBicycle
-    const result = `
-    <div>
-        La bici più leggera è ${name} con il peso di ${weightInKg} Kg
-    </div>
-    `;
 
-    bicycleContainer.innerHTML = result;
 }
+// Printing the result
+const {name, weightInKg} = minWeightBicycle
+const result = `
+<div>
+    La bici più leggera è ${name} con il peso di ${weightInKg} Kg
+</div>
+`;
+
+bicycleContainer.innerHTML = result;
