@@ -37,13 +37,16 @@ const teams = [
 const newArray = [];
 for (let i=0; i<teams.length; i++){
     const singleTeam = teams[i];
-    const {name} = singleTeam
+    singleTeam.points = getRndInteger(1, 100);
+    singleTeam.sufferedFouls = getRndInteger(1, 150);
+    const {name, sufferedFouls} = singleTeam;
     const copySingleTeam = {
         name,
-        sufferedFouls: getRndInteger ( 1, 150)
+        sufferedFouls,
     }
     newArray.push(copySingleTeam)
 
     console.log(name + ': ' + copySingleTeam.sufferedFouls + ' falli subiti');
 }
 console.log(newArray);
+console.log(teams)
