@@ -16,8 +16,6 @@ const bicycles = [
         weightInKg: 43
     }
  ];
-
-const bicycleContainer = document.getElementById('bicycle_container');
 let minWeightBicycle = bicycles[0];
 for (let i=0; i<bicycles.length; i++){
     // Calculating the minWeight
@@ -28,7 +26,8 @@ for (let i=0; i<bicycles.length; i++){
 
 }
 // Printing the result
-const {name, weightInKg} = minWeightBicycle
+const bicycleContainer = document.getElementById('bicycle_container');
+const {name, weightInKg} = minWeightBicycle;
 const result = `
 <div>
     La bici più leggera è ${name} con il peso di ${weightInKg} Kg
