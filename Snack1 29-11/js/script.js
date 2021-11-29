@@ -6,10 +6,14 @@
 // Eseguiamo questo esercizio prima con forEach e poi con filter.
 
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
-let max = parseInt(prompt(`Inserisci il numero massimo tra 0 e ${myArray.length-1}`));
-let min = parseInt(prompt(`Inserisci il numero minimo tra 0 e ${myArray.length-1}`));
 
-while (min > max){
+let max = parseInt(prompt(`Inserisci il numero massimo tra 0 e ${myArray.length-1}`));
+while (max<0 || max> myArray.length - 1){
+    max = parseInt(prompt(`ERRORE: Inserisci il numero massimo tra 0 e ${myArray.length-1}`));
+}
+
+let min = parseInt(prompt(`Inserisci il numero minimo tra 0 e ${myArray.length-1}`));
+while (min > max || min<0 || min> myArray.length - 1){
     min = parseInt(prompt(`ERRORE: Inserisci un numero minimo tra 0 e ${myArray.length-1} più piccolo del numero massimo`));
 }
 
