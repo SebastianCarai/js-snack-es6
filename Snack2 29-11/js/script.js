@@ -20,7 +20,7 @@ let students = [
     { name: 'Gaia', id: 145, grades: 74 },
     { name: 'Luigi', id: 196, grades: 68 },
     { name: 'Piero', id: 102, grades: 50 },
-    { name: 'Francesca', id: 120, grades: 84 },
+    { name: 'Francesca', id: 120, grades: 84 }
 ];
 
 
